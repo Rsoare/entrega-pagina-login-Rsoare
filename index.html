@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/globalStyles.css">
     <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/modal.css">
+
+    <script src="./src/scripts/modal.js" defer></script>
     <title>Login</title>
 </head>
+
 <body>
-    <script src="./src/scripts/modal.js"></script>
+    <div class="header__container">
+        <header class="header__content">
+            <h1 class="header__logo">NXT Games</h1>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li><a href="#" class="header__link">Todos</a></li>
+                    <li><a href="#" class="header__link">Nintendo</a></li>
+                    <li><a href="#" class="header__link">Xbox</a></li>
+                    <li><a href="#" class="header__link">PlayStation</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    
+    <main class="main__container">
+        <section class="description__container">
+            <figure>
+                <img src="./src/assets/img/xbox-ps4-and-Nintendo-logos 1.svg" alt="">
+            </figure>
+            <div class="description__content">
+                <h1>NXT Games</h1>
+                <p>bem-vindo à NXT Games a maior loja de Gift card para consoles da América Latina.</p>
+                <p>Por favor faça o login da sua conta antes de realizar a sua compra.</p>
+            </div>
+        </section>
+
+        <section>
+            <form class="form__container">
+                <h2>Login</h2>
+
+                <div class="form__email">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite aqui a sua senha">
+                </div>
+
+                <div class="form__password">
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" id="password" placeholder="Digite aqui o seu E-mail.">
+                </div>
+
+                <span class="modal__open" id="modalOpen">Esqueceu a sua senha ?</span>
+
+                <button>Logar</button>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>

@@ -1,1 +1,164 @@
-/* Desenvolva seu código aqui... */
+.header__container {
+    width: 100%;
+    height: 80px;
+    background-color: var(--color-secondary);
+
+}
+
+.header__content {
+    display: flex;
+    max-width: 1380px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-grey-6);
+}
+
+.header__nav {
+    height: 100%;
+    width: 35%;
+}
+
+.header__list {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 45px;
+}
+
+.header__link {
+    font-size: 18px;
+    color: var(--color-grey-6);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+.header__link:hover {
+    color: var(--color-grey-1);
+}
+
+.main__container {
+    display: flex;
+    margin: 150px auto;
+
+    width: 800px;
+    height: 500px;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-border);
+}
+
+.description__container {
+    width: 400px;
+    height: 100%;
+    background-color: var(--color-secondary);
+    border-radius: var(--radius-border);
+}
+
+.description__container>figure>img {
+    width: 100%;
+    opacity: 0.8;
+    border-top-left-radius: var(--radius-border);
+}
+
+.description__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.description__content>h1 {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.description__content>p {
+    font-size: 18px;
+    line-height: 35px;
+    padding: 0px 30px;
+
+}
+
+.form__container {
+    display: flex;
+    width: 400px;
+    height: 100%;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    position: relative;
+}
+
+.form__container>h2 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.form__email,
+.form__password {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    gap: 10px;
+}
+
+.form__email>label,
+.form__password>label {
+    font-size: 18px;
+}
+
+.form__email>input,
+.form__password>input {
+    height: 60px;
+    border-radius: var(--radius-border);
+    border: none;
+
+
+}
+
+.form__email>input::placeholder,
+.form__password>input::placeholder {
+    font-size: 20px;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.modal__open {
+    align-self: flex-end;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.modal__open:hover {
+    background-color: var(--color-houver-button);
+    transition: 0.5s;
+    border-radius: var(--radius-border);
+    padding: 5px;
+}
+
+.form__container>button {
+    height: 70px;
+    border-radius: var(--radius-border);
+    border: none;
+    color: var(--color-grey-6);
+    background-color: var(--color-button);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.form__container>button:hover {
+    background-color: var(--color-houver-button);
+    transition: 0.5s;
+}
